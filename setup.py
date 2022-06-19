@@ -9,5 +9,8 @@ setup(
     long_description="This is an example package",
     url="www.arthurelmes.com",
     keywords="test, sample",
-    python_requires=">=3.8, <4"
+    python_requires=">=3.8, <4",
+    package_dir={"data_pkg": "data_analysis"},
+    include_package_data=True,
+    package_data={"": ["data/*.csv"]}
 )
